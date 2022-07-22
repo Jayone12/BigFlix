@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -61,9 +62,9 @@ table {
 body {
   font-weight: 300;
   font-family: 'Source Sans Pro', sans-serif;
-  color:black;
+  color:${(props) => props.theme.white.darker};
   line-height: 1.2;
-  
+  background-color: black;
 }
 a {
   text-decoration:none;
@@ -85,6 +86,7 @@ root.render(
           <GlobalStyle />
           <App />
         </ThemeProvider>
+        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </RecoilRoot>
   </React.StrictMode>
