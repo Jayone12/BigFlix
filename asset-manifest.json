@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/BigFlix/static/js/main.da509901.js",
+    "main.js": "/BigFlix/static/js/main.5a2474eb.js",
     "index.html": "/BigFlix/index.html",
-    "main.da509901.js.map": "/BigFlix/static/js/main.da509901.js.map"
+    "main.5a2474eb.js.map": "/BigFlix/static/js/main.5a2474eb.js.map"
   },
   "entrypoints": [
-    "static/js/main.da509901.js"
+    "static/js/main.5a2474eb.js"
   ]
 }
